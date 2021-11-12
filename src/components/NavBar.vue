@@ -1,0 +1,198 @@
+<template>
+  <div class="wrap">
+    <div class="nav-bar">
+      <div class="menu">
+        <div
+          :class="showMenu ? 'menu-bars open' : 'menu-bars'"
+          @click="toggleMenu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="nav" :class="showMenu ? 'slide' : ''">
+        <p>About</p>
+        <p>Experience</p>
+        <p>Skills</p>
+        <p>Education</p>
+        <p>Volunteering</p>
+        <p>Contact</p>
+      </div>
+      <div class="social">
+        <p><img src="../assets/github.svg" alt="github" /></p>
+        <p><img src="../assets/linkedin.svg" alt="linkedin" /></p>
+        <p><img src="../assets/twitter.svg" alt="twitter" /></p>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "NavBar",
+
+  data() {
+    return {
+      showMenu: false,
+    };
+  },
+
+  methods: {
+    toggleMenu() {
+      this.showMenu = !this.showMenu;
+    },
+  },
+};
+</script>
+
+<style scoped>
+.wrap {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+.nav-bar {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.nav,
+.social {
+  height: 50px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 0.1px solid #ffffff;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 50px;
+  padding: 0 10px;
+  margin: 10px;
+}
+
+.nav {
+  position: absolute;
+  left: 0;
+}
+
+.social {
+  position: absolute;
+  right: 0;
+}
+
+p {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.nav p:hover {
+  color: #9900ff;
+}
+
+.social p:hover {
+  opacity: 0.8;
+}
+
+.social img {
+  height: 30px;
+  width: 30px;
+}
+
+/* Hamburger */
+.menu {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid #ffffff;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 50px;
+  padding: 10px;
+  margin: 10px;
+  display: none;
+  position: absolute;
+  left: calc(50% - 20px);
+  text-align: center;
+}
+
+.menu-bars {
+  display: flex;
+  flex-direction: column;
+  height: 1.25em;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-bars span {
+  display: block;
+  width: 1.75em;
+  height: 0.1875em;
+  z-index: 2;
+  background-color: #ffffff;
+  border-radius: 0.1875em;
+  transition: all 0.3s;
+}
+
+.menu-bars span:nth-child(1) {
+  transform-origin: 0 0;
+}
+
+.menu-bars span:nth-child(3) {
+  transform-origin: 0 100%;
+}
+
+.open {
+  margin-right: -10px;
+}
+
+.open span:nth-child(1) {
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.open span:nth-child(2) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+@media only screen and (max-width: 768px) {
+  .menu {
+    display: block;
+  }
+
+  .social,
+  .nav p {
+    display: none;
+  }
+
+  p {
+    padding: 20px;
+  }
+
+  .nav {
+    height: 0;
+    visibility: hidden;
+    transition: height 1000ms;
+    width: 200px;
+    position: absolute;
+    left: calc(50% - 100px);
+    top: 50px;
+    text-align: center;
+    border-radius: 20px;
+  }
+
+  .slide {
+    visibility: visible;
+    height: auto;
+    transition: height 1000ms;
+  }
+
+  .slide p {
+    display: block;
+  }
+}
+</style>
