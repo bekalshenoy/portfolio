@@ -21,13 +21,16 @@
         <a href="#contact">Contact</a>
       </div>
       <div class="social">
-        <a href="https://bit.ly/3xRYiGd" target="_blank"
+        <a href="https://bit.ly/3xRYiGd" target="_blank" rel="noopener"
           ><img src="../assets/github.svg" alt="github"
         /></a>
-        <a href="https://bit.ly/3txLPnx" target="_blank"
+        <a href="https://bit.ly/3txLPnx" target="_blank" rel="noopener"
           ><img src="../assets/linkedin.svg" alt="linkedin"
         /></a>
-        <a href="https://twitter.com/bramnathshenoy" target="_blank"
+        <a
+          href="https://twitter.com/bramnathshenoy"
+          target="_blank"
+          rel="noopener"
           ><img src="../assets/twitter.svg" alt="twitter"
         /></a>
       </div>

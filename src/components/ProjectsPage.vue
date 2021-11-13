@@ -22,7 +22,9 @@
             Organized By TinkerHub GCEK
           </p>
           <button>
-            <a href="https://bit.ly/3zWkFKq" target="_blank">View Source</a>
+            <a href="https://bit.ly/3zWkFKq" target="_blank" rel="noopener"
+              >View Source</a
+            >
           </button>
         </div>
         <div class="card">
@@ -34,7 +36,9 @@
             CSE 2020 Batch.
           </p>
           <button>
-            <a href="https://bit.ly/3ux5PrX" target="_blank">View Source</a>
+            <a href="https://bit.ly/3ux5PrX" target="_blank" rel="noopener"
+              >View Source</a
+            >
           </button>
         </div>
         <div class="card">
@@ -46,7 +50,9 @@
             User
           </p>
           <button>
-            <a href="https://bit.ly/3xW1UHd" target="_blank">View Source</a>
+            <a href="https://bit.ly/3xW1UHd" target="_blank" rel="noopener"
+              >View Source</a
+            >
           </button>
         </div>
       </div>
