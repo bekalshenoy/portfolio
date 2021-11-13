@@ -2,6 +2,11 @@
   <div class="wrap">
     <div class="head">
       <div class="photo">
+        <picture>
+          <source srcset="../assets/me.webp" type="image/webp" />
+          <source srcset="../assets/me.png" type="image/png" />
+          <img src="../assets/me.png" />
+        </picture>
         <img src="../assets/me.png" alt="my photo" />
       </div>
       <div class="details">
@@ -47,7 +52,8 @@ export default {
   text-align: center;
 }
 
-img {
+img,
+picture {
   border-radius: 50%;
   border: 1px solid #fbae3c;
   width: 50%;
@@ -83,7 +89,8 @@ p {
 }
 
 @media only screen and (max-width: 1080px) {
-  img {
+  img,
+  picture {
     width: 80%;
     height: auto;
   }
@@ -94,7 +101,8 @@ p {
 }
 
 @media only screen and (max-width: 768px) {
-  img {
+  img,
+  picture {
     width: 50%;
     height: auto;
   }
