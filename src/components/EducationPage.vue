@@ -117,7 +117,6 @@ span {
   }
 
   .card {
-    width: 100%;
     width: auto;
     overflow: hidden;
   }

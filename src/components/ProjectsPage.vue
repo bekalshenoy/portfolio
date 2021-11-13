@@ -164,7 +164,6 @@ button:hover a {
   }
 
   .card {
-    width: 100%;
     width: auto;
     overflow: hidden;
   }
