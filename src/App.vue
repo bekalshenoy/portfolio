@@ -2,14 +2,20 @@
   <NavBar />
   <HeadPage />
   <ExperiencePage />
+  <SkillsPage />
+  <ProjectsPage />
+  <EducationPage />
   <ContactPage />
 </template>
 
 <script>
 import NavBar from "@/components/NavBar.vue";
 import HeadPage from "@/components/HeadPage.vue";
-import ContactPage from "@/components/ContactPage.vue";
 import ExperiencePage from "@/components/ExperiencePage.vue";
+import SkillsPage from "@/components/SkillsPage.vue";
+import ProjectsPage from "@/components/ProjectsPage.vue";
+import EducationPage from "@/components/EducationPage.vue";
+import ContactPage from "@/components/ContactPage.vue";
 
 export default {
   name: "App",
@@ -18,6 +24,9 @@ export default {
     NavBar,
     HeadPage,
     ExperiencePage,
+    SkillsPage,
+    ProjectsPage,
+    EducationPage,
     ContactPage,
   },
 };

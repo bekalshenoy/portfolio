@@ -15,6 +15,7 @@
         <p>About</p>
         <p>Experience</p>
         <p>Skills</p>
+        <p>Projects</p>
         <p>Education</p>
         <p>Volunteering</p>
         <p>Contact</p>
@@ -63,8 +64,8 @@ export default {
 .nav,
 .social {
   height: 50px;
-  background: rgba(0, 0, 0, 0.5);
-  border: 0.1px solid #ffffff;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid #fbae3c;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border-radius: 50px;
@@ -86,14 +87,17 @@ p {
   display: inline-block;
   cursor: pointer;
   padding: 10px;
+  transition: all 0.5s ease-out;
 }
 
 .nav p:hover {
   color: #9900ff;
+  transition: all 0.5s ease-out;
 }
 
 .social p:hover {
   opacity: 0.8;
+  transition: all 0.5s ease-out;
 }
 
 .social img {
@@ -103,8 +107,8 @@ p {
 
 /* Hamburger */
 .menu {
-  background: rgba(0, 0, 0, 0.5);
-  border: 1px solid #ffffff;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid #fbae3c;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border-radius: 50px;
@@ -112,7 +116,7 @@ p {
   margin: 10px;
   display: none;
   position: absolute;
-  left: calc(50% - 20px);
+  left: calc(50% - 30px);
   text-align: center;
 }
 
@@ -159,13 +163,22 @@ p {
   transform: scale(0);
 }
 
+.slide {
+  height: 0;
+}
+
+@media only screen and (max-width: 1080px) {
+  .social {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .menu {
     display: block;
   }
 
-  .social,
-  .nav p {
+  .nav {
     display: none;
   }
 
@@ -174,21 +187,19 @@ p {
   }
 
   .nav {
-    height: 0;
-    visibility: hidden;
-    transition: height 1000ms;
+    transition: all 0.5s ease-out;
     width: 200px;
     position: absolute;
-    left: calc(50% - 100px);
+    left: calc(50% - 110px);
     top: 50px;
     text-align: center;
     border-radius: 20px;
   }
 
   .slide {
-    visibility: visible;
+    display: block;
     height: auto;
-    transition: height 1000ms;
+    transition: all 0.5s ease-out;
   }
 
   .slide p {

@@ -49,7 +49,7 @@ export default {
 
 img {
   border-radius: 50%;
-  border: 1px solid #ffffff;
+  border: 1px solid #fbae3c;
   width: 50%;
   height: auto;
   margin: 0 auto;
@@ -60,21 +60,22 @@ img {
 }
 
 .card {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.6);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border-radius: 20px;
-  padding: 20px;
+  padding: 50px;
 }
 
 h1 {
   font-size: 3.2em;
   margin-bottom: 10px;
-  text-shadow: 0 0 15px #d4d3b8;
+  color: #fbae3c;
 }
 
 h3 {
   margin-bottom: 20px;
+  text-shadow: 0 0 15px #d4d3b8;
 }
 
 p {
@@ -85,6 +86,10 @@ p {
   img {
     width: 80%;
     height: auto;
+  }
+
+  .card {
+    padding: 20px;
   }
 }
 

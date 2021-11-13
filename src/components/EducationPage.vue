@@ -1,32 +1,33 @@
 <template>
   <div class="wrap">
     <div class="head">
-      <h1>Experience</h1>
+      <h1>Education</h1>
       <div class="cards">
         <div class="card">
-          <h2>Front-End Developer Intern</h2>
-          <h3>ATG (Across the Globe)</h3>
-          <span>9/2021 - NOW</span>
-          <br /><br />
-          <p>Creating and managing websites</p>
+          <h2>B.Tech Computer Science And Engineering</h2>
+          <h3>
+            Government College Of Engineering Kannur (APJ Abdul Kalam
+            Techno-logical University)
+          </h3>
+          <span>2020 - NOW</span>
         </div>
         <div class="card">
-          <h2>Full-Stack Developer</h2>
-          <h3>CESSE, Government College Of Engineering Kannur</h3>
-          <span>5/2021 - NOW</span>
-          <br /><br />
-          <p>
-            Helping in carbon neutral project of CESSE (Centre of Excellence in
-            SYSTEMS, ENERGY & ENVIRONMENT), Government College of Engineering
-            Kannur
-          </p>
+          <h2>PLUS TWO Biology Science</h2>
+          <h3>S.N Trust’s H.S.S Thottada, Kannur (Kerala Board)</h3>
+          <span>2020</span>
         </div>
         <div class="card">
-          <h2>Web Developement Team Member</h2>
-          <h3>IEEE WIE Kerala</h3>
-          <span>3/2021 - NOW</span>
-          <br /><br />
-          <p>Helping in maintenance of WIE Kerala website</p>
+          <h2>SSLC</h2>
+          <h3>S.N Trust’s H.S.S Thottada, Kannur (Kerala Board)</h3>
+          <span>2018</span>
+        </div>
+      </div>
+      <h1>Courses Completed</h1>
+      <div class="cards">
+        <div class="card">
+          <h2>Neural Networks and Deep Learning</h2>
+          <h3>by DeepLearning.AI(Andrew Ng)</h3>
+          <span>2021</span>
         </div>
       </div>
     </div>
@@ -35,13 +36,13 @@
 
 <script>
 export default {
-  name: "ExperiencePage",
+  name: "SkillsPage",
 };
 </script>
 
 <style scoped>
 .wrap {
-  background: url("../assets/experience-page.svg");
+  background: url("../assets/skills-page.svg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -60,7 +61,7 @@ export default {
 
 .card {
   width: 500px;
-  min-height: 300px;
+  min-height: 200px;
   display: inline-block;
   overflow: hidden;
   margin: 20px;

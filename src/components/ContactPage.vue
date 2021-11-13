@@ -32,13 +32,13 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: auto;
+  padding: 100px 0;
 }
 
 .contact {
   width: 100%;
   max-width: 1920px;
-  height: 100vh;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -51,6 +51,12 @@ p {
   display: inline-block;
   cursor: pointer;
   padding: 10px;
+  transition: all 0.5s ease-out;
+}
+
+p:hover {
+  opacity: 0.8;
+  transition: all 0.5s ease-out;
 }
 
 h1 {
@@ -74,11 +80,12 @@ textarea {
   padding: 10px;
   outline: none;
   border: none;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.6);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  border: 0.1px solid #ffffff;
+  border: 1px solid #fbae3c;
   color: #ffffff;
+  transition: all 0.5s ease-out;
 }
 
 input[type="text"]:focus,
@@ -86,6 +93,7 @@ input[type="email"]:focus,
 textarea:focus {
   background: #ffffff;
   color: #333333;
+  transition: all 0.5s ease-out;
 }
 
 textarea {
@@ -102,15 +110,17 @@ input[type="button"] {
   background: #ffffff;
   color: #9900ff;
   cursor: pointer;
-  border: 0.1px solid transparent;
+  border: 1px solid transparent;
+  transition: all 0.5s ease-out;
 }
 
 input[type="button"]:hover {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.6);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  border: 0.1px solid #ffffff;
+  border: 1px solid #fbae3c;
   color: #ffffff;
+  transition: all 0.5s ease-out;
 }
 
 ::-webkit-input-placeholder {
@@ -140,7 +150,6 @@ input[type="button"]:hover {
 @media only screen and (max-width: 768px) {
   .wrap {
     padding: 50px 0;
-    height: auto;
   }
 
   .contact {
