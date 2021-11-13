@@ -2,12 +2,16 @@
   <div class="wrap">
     <div class="head">
       <div class="photo">
-        <picture>
-          <source srcset="../assets/me.webp" type="image/webp" />
-          <source srcset="../assets/me.png" type="image/png" />
-          <img src="../assets/me.png" />
-        </picture>
-        <img src="../assets/me.png" alt="my photo" />
+        <img
+          src="../assets/me.webp"
+          alt="my photo"
+          @error="
+            (e) => {
+              e.onerror = null;
+              e.src = '../assets/me.png';
+            }
+          "
+        />
       </div>
       <div class="details">
         <div class="card">
@@ -52,11 +56,10 @@ export default {
   text-align: center;
 }
 
-img,
-picture {
+img {
   border-radius: 50%;
   border: 1px solid #fbae3c;
-  width: 50%;
+  width: 75%;
   height: auto;
   margin: 0 auto;
 }
@@ -89,8 +92,7 @@ p {
 }
 
 @media only screen and (max-width: 1080px) {
-  img,
-  picture {
+  img {
     width: 80%;
     height: auto;
   }
@@ -101,8 +103,7 @@ p {
 }
 
 @media only screen and (max-width: 768px) {
-  img,
-  picture {
+  img {
     width: 50%;
     height: auto;
   }
