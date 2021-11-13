@@ -4,9 +4,15 @@
       <div class="head">
         <h1>Contact Me</h1>
         <div class="social">
-          <p><img src="../assets/github.svg" alt="github" /></p>
-          <p><img src="../assets/linkedin.svg" alt="linkedin" /></p>
-          <p><img src="../assets/twitter.svg" alt="twitter" /></p>
+          <a href="https://bit.ly/3xRYiGd" target="_blank"
+            ><img src="../assets/github.svg" alt="github"
+          /></a>
+          <a href="https://bit.ly/3txLPnx" target="_blank"
+            ><img src="../assets/linkedin.svg" alt="linkedin"
+          /></a>
+          <a href="https://twitter.com/bramnathshenoy" target="_blank"
+            ><img src="../assets/twitter.svg" alt="twitter"
+          /></a>
         </div>
       </div>
       <div class="form">
@@ -47,14 +53,16 @@ export default {
   text-align: center;
 }
 
-p {
+a {
+  text-decoration: none;
+  color: #ffffff;
   display: inline-block;
   cursor: pointer;
   padding: 10px;
   transition: all 0.5s ease-out;
 }
 
-p:hover {
+a:hover {
   opacity: 0.8;
   transition: all 0.5s ease-out;
 }

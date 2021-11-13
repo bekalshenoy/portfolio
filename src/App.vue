@@ -1,11 +1,12 @@
 <template>
   <NavBar />
-  <HeadPage />
-  <ExperiencePage />
-  <SkillsPage />
-  <ProjectsPage />
-  <EducationPage />
-  <ContactPage />
+  <HeadPage id="about" />
+  <ExperiencePage id="experience" />
+  <SkillsPage id="skills" />
+  <ProjectsPage id="projects" />
+  <EducationPage id="education" />
+  <VolunteeringPage id="volunteering" />
+  <ContactPage id="contact" />
 </template>
 
 <script>
@@ -15,6 +16,7 @@ import ExperiencePage from "@/components/ExperiencePage.vue";
 import SkillsPage from "@/components/SkillsPage.vue";
 import ProjectsPage from "@/components/ProjectsPage.vue";
 import EducationPage from "@/components/EducationPage.vue";
+import VolunteeringPage from "@/components/VolunteeringPage.vue";
 import ContactPage from "@/components/ContactPage.vue";
 
 export default {
@@ -27,6 +29,7 @@ export default {
     SkillsPage,
     ProjectsPage,
     EducationPage,
+    VolunteeringPage,
     ContactPage,
   },
 };

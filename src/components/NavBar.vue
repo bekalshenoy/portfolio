@@ -12,18 +12,24 @@
         </div>
       </div>
       <div class="nav" :class="showMenu ? 'slide' : ''">
-        <p>About</p>
-        <p>Experience</p>
-        <p>Skills</p>
-        <p>Projects</p>
-        <p>Education</p>
-        <p>Volunteering</p>
-        <p>Contact</p>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#volunteering">Volunteering</a>
+        <a href="#contact">Contact</a>
       </div>
       <div class="social">
-        <p><img src="../assets/github.svg" alt="github" /></p>
-        <p><img src="../assets/linkedin.svg" alt="linkedin" /></p>
-        <p><img src="../assets/twitter.svg" alt="twitter" /></p>
+        <a href="https://bit.ly/3xRYiGd" target="_blank"
+          ><img src="../assets/github.svg" alt="github"
+        /></a>
+        <a href="https://bit.ly/3txLPnx" target="_blank"
+          ><img src="../assets/linkedin.svg" alt="linkedin"
+        /></a>
+        <a href="https://twitter.com/bramnathshenoy" target="_blank"
+          ><img src="../assets/twitter.svg" alt="twitter"
+        /></a>
       </div>
     </div>
   </div>
@@ -83,19 +89,21 @@ export default {
   right: 0;
 }
 
-p {
+a {
+  text-decoration: none;
   display: inline-block;
   cursor: pointer;
   padding: 10px;
   transition: all 0.5s ease-out;
+  color: #ffffff;
 }
 
-.nav p:hover {
+.nav a:hover {
   color: #9900ff;
   transition: all 0.5s ease-out;
 }
 
-.social p:hover {
+.social a:hover {
   opacity: 0.8;
   transition: all 0.5s ease-out;
 }
@@ -182,7 +190,7 @@ p {
     display: none;
   }
 
-  p {
+  a {
     padding: 20px;
   }
 
@@ -202,7 +210,7 @@ p {
     transition: all 0.5s ease-out;
   }
 
-  .slide p {
+  .slide a {
     display: block;
   }
 }

@@ -36,7 +36,7 @@
 
 <script>
 export default {
-  name: "SkillsPage",
+  name: "EducationPage",
 };
 </script>
 
