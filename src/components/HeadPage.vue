@@ -2,6 +2,7 @@
   <div class="wrap">
     <div class="head">
       <div class="photo">
+        <iframe src="effect.html" frameborder="0" title="effect"></iframe>
         <img
           src="../assets/me.webp"
           alt="my photo"
@@ -116,7 +117,29 @@ p {
   text-align: left;
 }
 
+.photo iframe {
+  position: absolute;
+  width: 600px;
+  left: 25%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 600px;
+}
+
+@media only screen and (min-width: 1921px) {
+  .photo iframe {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(calc(-50% - 480px), -50%);
+  }
+}
+
 @media only screen and (max-width: 1080px) {
+  .photo iframe {
+    display: none;
+  }
+
   img {
     width: 80%;
     height: auto;
