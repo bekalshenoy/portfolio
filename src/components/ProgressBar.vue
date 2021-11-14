@@ -59,4 +59,23 @@ export default {
 [data-aos="progress-animate"].aos-animate {
   width: var(--value);
 }
+
+@media only screen and (max-width: 768px) {
+  .bar {
+    width: 10.9375rem;
+  }
+
+  [data-aos="progress-animate"] {
+    width: 0;
+    transition-property: width;
+  }
+
+  [data-aos="progress-animate"].aos-animate {
+    width: calc(calc(var(--value) / 8) * 7);
+  }
+
+  span {
+    font-size: 0.8em;
+  }
+}
 </style>

@@ -154,6 +154,11 @@ h2 {
 @media only screen and (max-width: 768px) {
   .wrap {
     padding: 3rem 0;
+    background: url("../assets/experience-page.svg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   h1 {
@@ -162,15 +167,15 @@ h2 {
   }
 
   h2 {
-    font-size: 1.2em;
-  }
-
-  h3 {
     font-size: 1em;
   }
 
+  h3 {
+    font-size: 0.8em;
+  }
+
   .skills {
-    padding: 0;
+    padding: 3rem 0;
     border: 1px solid #fbae3c;
   }
 
@@ -184,16 +189,8 @@ h2 {
 }
 
 @media only screen and (max-width: 400px) {
-  .wrap {
-    background: url("../assets/experience-page.svg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
   .skill {
-    margin: 01.25rem;
+    margin: 0 1.5rem;
   }
 }
 </style>
