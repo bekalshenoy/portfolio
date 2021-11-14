@@ -97,6 +97,7 @@ img {
 .card {
   background: rgba(0, 0, 0, 0.6);
   -webkit-backdrop-filter: blur(0.5rem);
+  border: 1px solid #fbae3c;
   backdrop-filter: blur(0.5rem);
   border-radius: 1.25rem;
   padding: 3rem;

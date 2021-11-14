@@ -63,7 +63,7 @@ export default {
 
 <style scoped>
 .wrap {
-  background: url("../assets/head-page.svg");
+  background: url("../assets/contact-page.svg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -129,8 +129,7 @@ textarea {
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-  background: #ffffff;
-  color: #333333;
+  background: #000000;
   transition: all 0.5s ease-out;
 }
 

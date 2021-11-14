@@ -88,7 +88,7 @@ export default {
 
 <style scoped>
 .wrap {
-  background: url("../assets/head-page.svg");
+  background: url("../assets/skills-page.svg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -102,7 +102,7 @@ export default {
   max-width: 1920px;
   margin: 0 auto;
   text-align: center;
-  color: #333333;
+  color: #ffffff;
 }
 
 .card {
@@ -113,16 +113,12 @@ export default {
   margin: 1.25rem;
   padding: 1.25rem;
   border-radius: 1.25rem;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid #fbae3c;
   -webkit-backdrop-filter: blur(0.5rem);
   backdrop-filter: blur(0.5rem);
   box-shadow: 0 0 0.5em 0.0625rem rgba(0, 0, 0, 0.1);
   transition: all 0.5s ease-out;
-}
-
-.card:hover {
-  background: rgba(255, 255, 255, 0.9);
-  transition: all 0.25s ease-out;
 }
 
 h1 {
@@ -134,7 +130,7 @@ h1 {
 
 h2 {
   margin-bottom: 1rem;
-  color: #560090;
+  color: #fbae3c;
 }
 
 span {
@@ -170,15 +166,16 @@ button a {
 }
 
 button:hover {
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(0, 0, 0, 0.6);
   -webkit-backdrop-filter: blur(0.5rem);
   backdrop-filter: blur(0.5rem);
   border: 1px solid #fbae3c;
+
   transition: all 0.5s ease-out;
 }
 
 button:hover a {
-  color: #333333;
+  color: #ffffff;
   transition: all 0.5s ease-out;
 }
 
@@ -193,6 +190,11 @@ button:hover a {
 @media only screen and (max-width: 768px) {
   .wrap {
     padding: 3rem 0;
+    background: url("../assets/experience-page.svg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .card {

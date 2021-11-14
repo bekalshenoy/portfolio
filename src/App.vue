@@ -81,7 +81,7 @@ html {
 
 body {
   background: #000000;
-  color: #333333;
+  color: #ffffff;
   overflow-x: hidden;
 }
 

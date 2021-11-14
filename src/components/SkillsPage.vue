@@ -138,6 +138,7 @@ h2 {
   text-align: left;
   margin: 3rem;
   background: rgba(0, 0, 0, 0.6);
+  border: 1px solid #fbae3c;
   -webkit-backdrop-filter: blur(0.5rem);
   backdrop-filter: blur(0.5rem);
   border-radius: 1.25rem;
@@ -170,7 +171,7 @@ h2 {
 
   .skills {
     padding: 0;
-    background: transparent;
+    border: 1px solid #fbae3c;
   }
 
   .skill {
@@ -183,6 +184,14 @@ h2 {
 }
 
 @media only screen and (max-width: 400px) {
+  .wrap {
+    background: url("../assets/experience-page.svg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .skill {
     margin: 01.25rem;
   }
