@@ -8,16 +8,37 @@
         data-aos-easing="ease-out"
       ></p>
     </div>
-    <span>{{ value }}%</span>
+    <span class="counter">{{ value }}%</span>
   </div>
 </template>
 
 <script>
+import counterUp from "counterup2";
+
 export default {
   name: "ProgressBar",
 
   props: {
     value: String,
+  },
+
+  mounted() {
+    const callback = (entries) => {
+      entries.forEach((entry) => {
+        const el = entry.target;
+        if (entry.isIntersecting) {
+          counterUp(el, {
+            duration: 500,
+          });
+        }
+      });
+    };
+
+    const IO = new IntersectionObserver(callback, { threshold: 1 });
+
+    document.querySelectorAll(".counter").forEach((el) => {
+      IO.observe(el);
+    });
   },
 };
 </script>
