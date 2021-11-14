@@ -1,12 +1,7 @@
 <template>
   <div class="wrap">
     <div class="nav-bar">
-      <div
-        class="menu"
-        data-aos="fade-down"
-        data-aos-duration="1000"
-        data-aos-easing="ease-out"
-      >
+      <div class="menu">
         <div
           :class="
             innerWidth <= 768
