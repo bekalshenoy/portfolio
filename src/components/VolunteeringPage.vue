@@ -135,7 +135,7 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
-  padding: 100px 0;
+  padding: 6rem 0;
 }
 
 .head {
@@ -150,18 +150,18 @@ export default {
 
 h1 {
   font-size: 3.2em;
-  margin-bottom: 50px;
-  text-shadow: 0 0 15px #d4d3b8;
+  margin-bottom: 3rem;
+  text-shadow: 0 0 1rem #d4d3b8;
 }
 
 h2 {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   color: #fbae3c;
 }
 
 .card {
   text-align: center;
-  margin: 50px;
+  margin: 3rem;
 }
 
 ul {
@@ -171,11 +171,11 @@ ul {
 li {
   height: auto;
   background: rgba(0, 0, 0, 0.6);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  padding: 10px;
-  border-radius: 30px;
-  margin: 10px;
+  -webkit-backdrop-filter: blur(0.5rem);
+  backdrop-filter: blur(0.5rem);
+  padding: 0.5rem;
+  border-radius: 2rem;
+  margin: 0.5rem;
   border: 1px solid #fbae3c;
   transition: all 0.5s ease-out;
 }
@@ -193,7 +193,7 @@ li:hover {
 
 @media only screen and (max-width: 768px) {
   .wrap {
-    padding: 50px 0;
+    padding: 3rem 0;
   }
 
   .head {
@@ -202,7 +202,7 @@ li:hover {
 
   h1 {
     font-size: 1.8em;
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
   }
 }
 </style>

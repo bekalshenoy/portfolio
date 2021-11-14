@@ -62,7 +62,7 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
-  padding: 100px 0;
+  padding: 6rem 0;
 }
 
 .head {
@@ -74,17 +74,17 @@ export default {
 }
 
 .card {
-  width: 500px;
-  min-height: 300px;
+  width: 31rem;
+  min-height: 18.75rem;
   display: inline-block;
   overflow: hidden;
-  margin: 20px;
-  padding: 20px;
-  border-radius: 20px;
+  margin: 1.25rem;
+  padding: 1.25rem;
+  border-radius: 1.25rem;
   background: rgba(255, 255, 255, 0.8);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 0 0.5em 0.0625em rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(0.5rem);
+  backdrop-filter: blur(0.5rem);
+  box-shadow: 0 0 0.5em 0.0625rem rgba(0, 0, 0, 0.1);
   transition: all 0.5s ease-out;
 }
 
@@ -95,18 +95,18 @@ export default {
 
 h1 {
   font-size: 3.2em;
-  margin-bottom: 50px;
-  text-shadow: 0 0 15px #d4d3b8;
+  margin-bottom: 3rem;
+  text-shadow: 0 0 1rem #d4d3b8;
   color: #ffffff;
 }
 
 h2 {
-  margin-bottom: 10px;
+  margin-bottom: 0.5rem;
   color: #560090;
 }
 
 h3 {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   color: #9900ff;
 }
 
@@ -118,22 +118,22 @@ span {
     rgba(86, 0, 144, 1) 35%,
     rgba(251, 174, 60, 1) 100%
   );
-  padding: 5px 10px;
+  padding: 0.25rem 0.5rem;
   color: #ffffff;
-  border-radius: 5px;
+  border-radius: 0.25rem;
 }
 
 @media only screen and (max-width: 1080px) {
   .card {
-    max-width: 300px;
-    min-height: 400px;
+    max-width: 18.75rem;
+    min-height: 25rem;
     overflow: hidden;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .wrap {
-    padding: 50px 0;
+    padding: 3rem 0;
   }
 
   .card {
@@ -143,7 +143,7 @@ span {
 
   h1 {
     font-size: 1.8em;
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
   }
 }
 </style>

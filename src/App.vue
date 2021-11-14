@@ -50,13 +50,13 @@ export default {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
-  border-radius: 10px;
+  width: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 ::-webkit-scrollbar-track {
   background: #333333;
-  border-radius: 10px;
+  border-radius: 0.5rem;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -67,7 +67,7 @@ export default {
     rgba(86, 0, 144, 1) 35%,
     rgba(251, 174, 60, 1) 100%
   );
-  border-radius: 10px;
+  border-radius: 0.5rem;
 }
 
 html {
@@ -80,6 +80,7 @@ html {
 body {
   background: #000000;
   color: #333333;
+  overflow-x: hidden;
 }
 
 h1,

@@ -27,7 +27,7 @@
         :style="
           innerWidth <= 768
             ? showMenu
-              ? 'display: block;height: 450px;visibility: visible;transition: all 0.5s ease-out;'
+              ? 'display: block;height: 28rem;visibility: visible;transition: all 0.5s ease-out;'
               : 'height: 0;transition:all 0.5s ease-out;'
             : ''
         "
@@ -113,14 +113,14 @@ export default {
 
 .nav,
 .social {
-  height: 50px;
+  height: 3rem;
   background: rgba(0, 0, 0, 0.6);
   border: 1px solid #fbae3c;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  border-radius: 50px;
-  padding: 0 10px;
-  margin: 10px;
+  -webkit-backdrop-filter: blur(0.5rem);
+  backdrop-filter: blur(0.5rem);
+  border-radius: 3rem;
+  padding: 0 0.5rem;
+  margin: 0.5rem;
 }
 
 .nav {
@@ -137,7 +137,7 @@ a {
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
-  padding: 10px;
+  padding: 0.5rem;
   transition: all 0.5s ease-out;
   color: #ffffff;
 }
@@ -153,40 +153,41 @@ a {
 }
 
 .social img {
-  height: 30px;
-  width: 30px;
+  height: 2rem;
+  width: 2rem;
 }
 
 /* Hamburger */
 .menu {
   background: rgba(0, 0, 0, 0.6);
   border: 1px solid #fbae3c;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  border-radius: 50px;
-  padding: 10px;
+  -webkit-backdrop-filter: blur(0.5rem);
+  backdrop-filter: blur(0.5rem);
+  border-radius: 3rem;
+  padding: 0.5rem;
   display: none;
   position: fixed;
-  left: calc(50% - 20px);
-  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 2rem;
   text-align: center;
 }
 
 .menu-bars {
   display: flex;
   flex-direction: column;
-  height: 1.25em;
+  height: 1.25rem;
   justify-content: space-between;
   position: relative;
 }
 
 .menu-bars span {
   display: block;
-  width: 1.75em;
-  height: 0.1875em;
+  width: 1.75rem;
+  height: 0.1875rem;
   z-index: 2;
   background-color: #ffffff;
-  border-radius: 0.1875em;
+  border-radius: 0.1875rem;
   transition: all 0.3s;
 }
 
@@ -199,7 +200,7 @@ a {
 }
 
 .open span {
-  width: 1.75em;
+  width: 1.75rem;
 }
 
 .open span:nth-child(1) {
@@ -240,16 +241,17 @@ a {
   }
 
   a {
-    padding: 20px;
+    padding: 1.25rem;
   }
 
   .nav {
-    width: 200px;
+    width: 12.5rem;
     position: fixed;
-    left: calc(50% - 100px);
-    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5em;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     margin: 0;
   }
 

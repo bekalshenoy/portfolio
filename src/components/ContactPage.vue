@@ -50,6 +50,7 @@
           data-aos-easing="ease-out"
         />
       </div>
+      <span>&copy;Copyright Ramnath Shenoy B 2021</span>
     </div>
   </div>
 </template>
@@ -68,7 +69,7 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
-  padding: 100px 0;
+  padding: 6rem 0;
 }
 
 .contact {
@@ -87,7 +88,7 @@ a {
   color: #ffffff;
   display: inline-block;
   cursor: pointer;
-  padding: 10px;
+  padding: 0.5rem;
   transition: all 0.5s ease-out;
 }
 
@@ -98,28 +99,28 @@ a:hover {
 
 h1 {
   font-size: 3.2em;
-  margin-bottom: 10px;
-  text-shadow: 0 0 15px #d4d3b8;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 1rem #d4d3b8;
 }
 
 input,
 textarea {
   display: block;
-  margin: 20px;
+  margin: 1.25rem;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
   width: 30vw;
-  height: 50px;
-  border-radius: 10px;
-  padding: 10px;
+  height: 3rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
   outline: none;
   border: none;
   background: rgba(0, 0, 0, 0.6);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(0.5rem);
+  backdrop-filter: blur(0.5rem);
   border: 1px solid #fbae3c;
   color: #ffffff;
   transition: all 0.5s ease-out;
@@ -135,13 +136,13 @@ textarea:focus {
 
 textarea {
   resize: none;
-  height: 300px;
+  height: 18.75rem;
 }
 
 input[type="button"] {
-  width: 100px;
-  border-radius: 10px;
-  padding: 10px;
+  width: 6rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
   outline: none;
   border: none;
   background: #ffffff;
@@ -153,8 +154,8 @@ input[type="button"] {
 
 input[type="button"]:hover {
   background: rgba(0, 0, 0, 0.6);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(0.5rem);
+  backdrop-filter: blur(0.5rem);
   border: 1px solid #fbae3c;
   color: #ffffff;
   transition: all 0.5s ease-out;
@@ -186,7 +187,7 @@ input[type="button"]:hover {
 
 @media only screen and (max-width: 768px) {
   .wrap {
-    padding: 50px 0;
+    padding: 3rem 0 5rem 0;
   }
 
   .contact {
@@ -201,7 +202,7 @@ input[type="button"]:hover {
   input[type="text"],
   input[type="email"],
   textarea {
-    width: calc(100% - 40px);
+    width: calc(100% - 2.5rem);
   }
 }
 </style>

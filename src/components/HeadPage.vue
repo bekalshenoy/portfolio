@@ -90,26 +90,26 @@ img {
 }
 
 .details {
-  margin: 20px;
+  margin: 1.25rem;
 }
 
 .card {
   background: rgba(0, 0, 0, 0.6);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
-  padding: 50px;
+  -webkit-backdrop-filter: blur(0.5rem);
+  backdrop-filter: blur(0.5rem);
+  border-radius: 1.25rem;
+  padding: 3rem;
 }
 
 h1 {
   font-size: 3.2em;
-  margin-bottom: 10px;
+  margin-bottom: 0.5rem;
   color: #fbae3c;
 }
 
 h3 {
-  margin-bottom: 20px;
-  text-shadow: 0 0 15px #d4d3b8;
+  margin-bottom: 1.25rem;
+  text-shadow: 0 0 1rem #d4d3b8;
 }
 
 p {
@@ -123,7 +123,7 @@ p {
   }
 
   .card {
-    padding: 20px;
+    padding: 1.25rem;
   }
 }
 
@@ -134,7 +134,7 @@ p {
   }
 
   .wrap {
-    padding: 100px 0 50px 0;
+    padding: 6rem 0 3rem 0;
     height: auto;
   }
 

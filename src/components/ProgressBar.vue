@@ -30,16 +30,16 @@ export default {
 }
 
 .bar {
-  width: 200px;
-  height: 5px;
-  border-radius: 10px;
+  width: 12.5rem;
+  height: 0.25rem;
+  border-radius: 0.5rem;
   background: #333333;
   display: inline-block;
-  margin: 10px;
+  margin: 0.5rem;
 }
 
 .value {
-  height: 5px;
+  height: 0.25rem;
   background: #9900ff;
   background: linear-gradient(
     90deg,
@@ -48,7 +48,7 @@ export default {
     rgba(251, 174, 60, 1) 100%
   );
 
-  border-radius: 10px;
+  border-radius: 0.5rem;
 }
 
 [data-aos="progress-animate"] {
