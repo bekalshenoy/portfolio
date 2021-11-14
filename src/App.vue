@@ -10,6 +10,8 @@
 </template>
 
 <script>
+import AOS from "aos";
+import "aos/dist/aos.css";
 import NavBar from "@/components/NavBar.vue";
 import HeadPage from "@/components/HeadPage.vue";
 import ExperiencePage from "@/components/ExperiencePage.vue";
@@ -32,6 +34,10 @@ export default {
     VolunteeringPage,
     ContactPage,
   },
+
+  mounted() {
+    AOS.init();
+  },
 };
 </script>
 
@@ -43,8 +49,35 @@ export default {
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #333333;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fbae3c;
+  background: linear-gradient(
+    180deg,
+    rgba(153, 0, 255, 1) 0%,
+    rgba(86, 0, 144, 1) 35%,
+    rgba(251, 174, 60, 1) 100%
+  );
+  border-radius: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
-  background: #ffffff;
+  background: #000000;
   color: #333333;
 }
 

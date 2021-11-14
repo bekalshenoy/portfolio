@@ -3,14 +3,24 @@
     <div class="head">
       <h1>Experience</h1>
       <div class="cards">
-        <div class="card">
+        <div
+          class="card"
+          data-aos="zoom-in-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-out"
+        >
           <h2>Front-End Developer Intern</h2>
           <h3>ATG (Across the Globe)</h3>
           <span>9/2021 - NOW</span>
           <br /><br />
           <p>Creating and managing websites</p>
         </div>
-        <div class="card">
+        <div
+          class="card"
+          data-aos="zoom-in-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-out"
+        >
           <h2>Full-Stack Developer</h2>
           <h3>CESSE, Government College Of Engineering Kannur</h3>
           <span>5/2021 - NOW</span>
@@ -21,8 +31,13 @@
             Kannur
           </p>
         </div>
-        <div class="card">
-          <h2>Web Developement Team Member</h2>
+        <div
+          class="card"
+          data-aos="zoom-in-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-out"
+        >
+          <h2>Web Development Team Member</h2>
           <h3>IEEE WIE Kerala</h3>
           <span>3/2021 - NOW</span>
           <br /><br />
@@ -97,6 +112,12 @@ h3 {
 
 span {
   background: #fbae3c;
+  background: linear-gradient(
+    90deg,
+    rgba(153, 0, 255, 1) 0%,
+    rgba(86, 0, 144, 1) 35%,
+    rgba(251, 174, 60, 1) 100%
+  );
   padding: 5px 10px;
   color: #ffffff;
   border-radius: 5px;

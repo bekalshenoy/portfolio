@@ -3,7 +3,12 @@
     <div class="head">
       <h1>Education</h1>
       <div class="cards">
-        <div class="card">
+        <div
+          class="card"
+          data-aos="zoom-in-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-out"
+        >
           <h2>B.Tech Computer Science And Engineering</h2>
           <h3>
             Government College Of Engineering Kannur (APJ Abdul Kalam
@@ -11,12 +16,22 @@
           </h3>
           <span>2020 - NOW</span>
         </div>
-        <div class="card">
+        <div
+          class="card"
+          data-aos="zoom-in-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-out"
+        >
           <h2>PLUS TWO Biology Science</h2>
           <h3>S.N Trust’s H.S.S Thottada, Kannur (Kerala Board)</h3>
           <span>2020</span>
         </div>
-        <div class="card">
+        <div
+          class="card"
+          data-aos="zoom-in-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-out"
+        >
           <h2>SSLC</h2>
           <h3>S.N Trust’s H.S.S Thottada, Kannur (Kerala Board)</h3>
           <span>2018</span>
@@ -24,7 +39,12 @@
       </div>
       <h1>Courses Completed</h1>
       <div class="cards">
-        <div class="card">
+        <div
+          class="card"
+          data-aos="zoom-in-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-out"
+        >
           <h2>Neural Networks and Deep Learning</h2>
           <h3>by DeepLearning.AI(Andrew Ng)</h3>
           <span>2021</span>
@@ -98,6 +118,12 @@ h3 {
 
 span {
   background: #fbae3c;
+  background: linear-gradient(
+    90deg,
+    rgba(153, 0, 255, 1) 0%,
+    rgba(86, 0, 144, 1) 35%,
+    rgba(251, 174, 60, 1) 100%
+  );
   padding: 5px 10px;
   color: #ffffff;
   border-radius: 5px;

@@ -5,6 +5,8 @@
         <img
           src="../assets/me.webp"
           alt="my photo"
+          data-aos="fade"
+          data-aos-duration="1500"
           @error="
             (e) => {
               e.onerror = null;
@@ -13,11 +15,34 @@
           "
         />
       </div>
-      <div class="details">
+      <div
+        class="details"
+        data-aos="fade"
+        data-aos-duration="1000"
+        data-aos-delay="600"
+      >
         <div class="card">
-          <h1>Ramnath Shenoy B</h1>
-          <h3>Full Stack Web Developer / Data Science Enthusiast</h3>
-          <p>
+          <h1
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-easing="ease-out"
+          >
+            Ramnath Shenoy B
+          </h1>
+          <h3
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+            data-aos-easing="ease-out"
+          >
+            Full Stack Web Developer / Data Science Enthusiast
+          </h3>
+          <p
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+            data-aos-easing="ease-out"
+          >
             Full Stack Web Developer with 4+ years of experience. Experienced in
             MEVN and MERN stack. Data Science and Machine Learning enthusiast
             with some experience in TENSORFLOW.

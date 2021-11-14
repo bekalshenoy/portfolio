@@ -19,10 +19,36 @@
         </div>
       </div>
       <div class="form">
-        <input type="email" placeholder="Email" />
-        <input type="text" placeholder="Subject" />
-        <textarea placeholder="Description"></textarea>
-        <input type="button" value="Send" />
+        <input
+          type="email"
+          placeholder="Email"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-out"
+        />
+        <input
+          type="text"
+          placeholder="Subject"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+          data-aos-easing="ease-out"
+        />
+        <textarea
+          placeholder="Description"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+          data-aos-easing="ease-out"
+        ></textarea>
+        <input
+          type="button"
+          value="Send"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+          data-aos-easing="ease-out"
+        />
       </div>
     </div>
   </div>

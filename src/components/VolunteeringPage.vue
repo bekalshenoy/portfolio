@@ -5,14 +5,69 @@
         <h1>Volunteering</h1>
         <div class="card">
           <ul>
-            <li>SCOUT AND GUIDES (2018 - 2020)</li>
-            <li>IEEE (2020 - NOW)</li>
-            <li>ISTE (2021 - NOW)</li>
-            <li>ROBOCEK GCE (2021 - NOW)</li>
-            <li>IEEE WIE GCEK Event Organizing Team Member (2021)</li>
-            <li>IEEE GCEK DEVCOM Web Development Mentor (2021)</li>
-            <li>IEEE GCEK Web Development Team Member (2021)</li>
-            <li>ROBOCEK GCEK Web Development Team Member (2021)</li>
+            <li
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-out"
+            >
+              SCOUT AND GUIDES (2018 - 2020)
+            </li>
+            <li
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-out"
+              data-aos-delay="50"
+            >
+              IEEE (2020 - NOW)
+            </li>
+            <li
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-out"
+              data-aos-delay="100"
+            >
+              ISTE (2021 - NOW)
+            </li>
+            <li
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-out"
+              data-aos-delay="150"
+            >
+              ROBOCEK GCE (2021 - NOW)
+            </li>
+            <li
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-out"
+              data-aos-delay="200"
+            >
+              IEEE WIE GCEK Event Organizing Team Member (2021)
+            </li>
+            <li
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-out"
+              data-aos-delay="250"
+            >
+              IEEE GCEK DEVCOM Web Development Mentor (2021)
+            </li>
+            <li
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-out"
+              data-aos-delay="300"
+            >
+              IEEE GCEK Web Development Team Member (2021)
+            </li>
+            <li
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-out"
+              data-aos-delay="350"
+            >
+              ROBOCEK GCEK Web Development Team Member (2021)
+            </li>
           </ul>
         </div>
       </div>
@@ -20,11 +75,45 @@
         <h1>Soft Skills</h1>
         <div class="card">
           <ul>
-            <li>Good Communication And Teamwork Skill</li>
-            <li>Good At Problem Solving</li>
-            <li>Good At Managing Time And Tasks</li>
-            <li>Dedicated To Task Till Task Ends</li>
-            <li>Positive Mindset</li>
+            <li
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-out"
+            >
+              Good Communication And Teamwork Skill
+            </li>
+            <li
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-out"
+              data-aos-delay="50"
+            >
+              Good At Problem Solving
+            </li>
+            <li
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-out"
+              data-aos-delay="100"
+            >
+              Good At Managing Time And Tasks
+            </li>
+            <li
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-out"
+              data-aos-delay="150"
+            >
+              Dedicated To Task Till Task Ends
+            </li>
+            <li
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-out"
+              data-aos-delay="200"
+            >
+              Positive Mindset
+            </li>
           </ul>
         </div>
       </div>

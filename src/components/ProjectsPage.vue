@@ -3,7 +3,12 @@
     <div class="head">
       <h1>Projects</h1>
       <div class="cards">
-        <div class="card">
+        <div
+          class="card"
+          data-aos="zoom-in-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-out"
+        >
           <h2>Carbon Neutral Project</h2>
           <span>2021 - NOW</span>
           <br /><br />
@@ -13,7 +18,12 @@
             AI
           </p>
         </div>
-        <div class="card">
+        <div
+          class="card"
+          data-aos="zoom-in-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-out"
+        >
           <h2>Event Management Website</h2>
           <span>2021</span>
           <br /><br />
@@ -27,7 +37,12 @@
             >
           </button>
         </div>
-        <div class="card">
+        <div
+          class="card"
+          data-aos="zoom-in-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-out"
+        >
           <h2>Class Forum</h2>
           <span>2021</span>
           <br /><br />
@@ -41,7 +56,12 @@
             >
           </button>
         </div>
-        <div class="card">
+        <div
+          class="card"
+          data-aos="zoom-in-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-out"
+        >
           <h2>Sticky Notes</h2>
           <span>2017 - 2020</span>
           <br /><br />
@@ -119,6 +139,12 @@ h2 {
 
 span {
   background: #fbae3c;
+  background: linear-gradient(
+    90deg,
+    rgba(153, 0, 255, 1) 0%,
+    rgba(86, 0, 144, 1) 35%,
+    rgba(251, 174, 60, 1) 100%
+  );
   padding: 5px 10px;
   color: #ffffff;
   border-radius: 5px;

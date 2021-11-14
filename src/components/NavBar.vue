@@ -1,9 +1,20 @@
 <template>
   <div class="wrap">
     <div class="nav-bar">
-      <div class="menu">
+      <div
+        class="menu"
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-easing="ease-out"
+      >
         <div
-          :class="showMenu ? 'menu-bars open' : 'menu-bars'"
+          :class="
+            innerWidth <= 768
+              ? showMenu
+                ? 'menu-bars open'
+                : 'menu-bars'
+              : 'menu-bars'
+          "
           @click="toggleMenu"
         >
           <span></span>
@@ -11,7 +22,19 @@
           <span></span>
         </div>
       </div>
-      <div class="nav" :class="showMenu ? 'slide' : ''">
+      <div
+        :class="innerWidth <= 768 ? (showMenu ? 'nav slide' : 'nav') : 'nav'"
+        :style="
+          innerWidth <= 768
+            ? showMenu
+              ? 'display: block;height: 450px;visibility: visible;transition: all 0.5s ease-out;'
+              : 'height: 0;transition:all 0.5s ease-out;'
+            : ''
+        "
+        :data-aos="innerWidth <= 768 ? null : 'fade-right'"
+        :ata-aos-duration="innerWidth <= 768 ? null : '1000'"
+        :data-aos-easing="innerWidth <= 768 ? null : 'ease-out'"
+      >
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
@@ -20,7 +43,12 @@
         <a href="#volunteering">Volunteering</a>
         <a href="#contact">Contact</a>
       </div>
-      <div class="social">
+      <div
+        class="social"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        data-aos-easing="ease-out"
+      >
         <a href="https://bit.ly/3xRYiGd" target="_blank" rel="noopener"
           ><img src="../assets/github.svg" alt="github"
         /></a>
@@ -45,12 +73,25 @@ export default {
   data() {
     return {
       showMenu: false,
+      innerWidth: window.innerWidth,
     };
+  },
+
+  mounted() {
+    window.addEventListener("resize", () => {
+      this.innerWidth = window.innerWidth;
+    });
   },
 
   methods: {
     toggleMenu() {
       this.showMenu = !this.showMenu;
+    },
+  },
+
+  watch: {
+    innerWidth(val) {
+      if (val > 768 && this.showMenu) this.showMenu = false;
     },
   },
 };
@@ -124,10 +165,10 @@ a {
   backdrop-filter: blur(10px);
   border-radius: 50px;
   padding: 10px;
-  margin: 10px;
   display: none;
-  position: absolute;
-  left: calc(50% - 30px);
+  position: fixed;
+  left: calc(50% - 20px);
+  top: 20px;
   text-align: center;
 }
 
@@ -157,16 +198,16 @@ a {
   transform-origin: 0 100%;
 }
 
-.open {
-  margin-right: -10px;
+.open span {
+  width: 1.75em;
 }
 
 .open span:nth-child(1) {
-  transform: rotate(45deg) translate(-1px, -1px);
+  transform: rotate(33deg) translate(3px, -1px);
 }
 
 .open span:nth-child(3) {
-  transform: rotate(-45deg) translate(-1px, 0);
+  transform: rotate(-33deg) translate(3px, 0);
 }
 
 .open span:nth-child(2) {
@@ -174,8 +215,8 @@ a {
   transform: scale(0);
 }
 
-.slide {
-  height: 0;
+.slide a {
+  opacity: 0;
 }
 
 @media only screen and (max-width: 1080px) {
@@ -190,7 +231,12 @@ a {
   }
 
   .nav {
-    display: none;
+    visibility: hidden;
+  }
+
+  .nav a {
+    visibility: hidden;
+    opacity: 0;
   }
 
   a {
@@ -198,23 +244,19 @@ a {
   }
 
   .nav {
-    transition: all 0.5s ease-out;
     width: 200px;
-    position: absolute;
-    left: calc(50% - 110px);
-    top: 50px;
+    position: fixed;
+    left: calc(50% - 100px);
+    top: 80px;
     text-align: center;
     border-radius: 20px;
-  }
-
-  .slide {
-    display: block;
-    height: auto;
-    transition: all 0.5s ease-out;
+    margin: 0;
   }
 
   .slide a {
-    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s ease-out 0.5s;
   }
 }
 </style>
