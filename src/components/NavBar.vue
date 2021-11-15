@@ -30,13 +30,13 @@
         :ata-aos-duration="innerWidth <= 768 ? null : '1000'"
         :data-aos-easing="innerWidth <= 768 ? null : 'ease-out'"
       >
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-        <a href="#volunteering">Volunteering</a>
-        <a href="#contact">Contact</a>
+        <a href="#about" @click="toggleMenu">About</a>
+        <a href="#experience" @click="toggleMenu">Experience</a>
+        <a href="#skills" @click="toggleMenu">Skills</a>
+        <a href="#projects" @click="toggleMenu">Projects</a>
+        <a href="#education" @click="toggleMenu">Education</a>
+        <a href="#volunteering" @click="toggleMenu">Volunteering</a>
+        <a href="#contact" @click="toggleMenu">Contact</a>
       </div>
       <div
         class="social"
@@ -80,7 +80,9 @@ export default {
 
   methods: {
     toggleMenu() {
-      this.showMenu = !this.showMenu;
+      if (innerWidth <= 768) {
+        this.showMenu = !this.showMenu;
+      }
     },
   },
 
