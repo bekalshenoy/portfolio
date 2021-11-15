@@ -68,14 +68,11 @@ export default {
   data() {
     return {
       showMenu: false,
-      innerWidth: window.innerWidth,
     };
   },
 
-  mounted() {
-    window.addEventListener("resize", () => {
-      this.innerWidth = window.innerWidth;
-    });
+  props: {
+    innerWidth: Number,
   },
 
   methods: {

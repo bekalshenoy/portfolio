@@ -2,7 +2,12 @@
   <div class="wrap">
     <div class="head">
       <div class="photo">
-        <iframe src="effect.html" frameborder="0" title="effect"></iframe>
+        <iframe
+          src="effect.html"
+          frameborder="0"
+          title="effect"
+          v-if="innerWidth > 1080"
+        ></iframe>
         <img
           src="../assets/me.webp"
           alt="my photo"
@@ -57,6 +62,10 @@
 <script>
 export default {
   name: "HeadPage",
+
+  props: {
+    innerWidth: Number,
+  },
 };
 </script>
 

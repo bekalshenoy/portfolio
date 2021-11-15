@@ -1,6 +1,6 @@
 <template>
-  <NavBar />
-  <HeadPage id="about" />
+  <NavBar :innerWidth="innerWidth" />
+  <HeadPage id="about" :innerWidth="innerWidth" />
   <ExperiencePage id="experience" />
   <SkillsPage id="skills" />
   <ProjectsPage id="projects" />
@@ -35,8 +35,19 @@ export default {
     ContactPage,
   },
 
+  data() {
+    return {
+      showMenu: false,
+      innerWidth: window.innerWidth,
+    };
+  },
+
   mounted() {
     AOS.init();
+
+    window.addEventListener("resize", () => {
+      this.innerWidth = window.innerWidth;
+    });
   },
 };
 </script>
