@@ -248,7 +248,7 @@ a {
     transform: translateX(-50%);
     top: 5em;
     text-align: center;
-    border-radius: 1.25rem;
+    border-radius: 1rem;
     margin: 0;
   }
 

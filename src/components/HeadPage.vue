@@ -99,14 +99,21 @@ img {
   -webkit-backdrop-filter: blur(0.5rem);
   border: 1px solid #fbae3c;
   backdrop-filter: blur(0.5rem);
-  border-radius: 1.25rem;
+  border-radius: 1rem;
   padding: 3rem;
 }
 
 h1 {
   font-size: 3.2em;
   margin-bottom: 0.5rem;
-  color: #fbae3c;
+  background: #fbae3c;
+  background: linear-gradient(
+    90deg,
+    rgba(153, 0, 255, 1) 0%,
+    rgba(251, 174, 60, 1) 100%
+  );
+  background-clip: text;
+  color: transparent;
 }
 
 h3 {

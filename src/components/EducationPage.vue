@@ -86,7 +86,7 @@ export default {
   overflow: hidden;
   margin: 1.25rem;
   padding: 1.25rem;
-  border-radius: 1.25rem;
+  border-radius: 1rem;
   background: rgba(0, 0, 0, 0.6);
   border: 1px solid #fbae3c;
   -webkit-backdrop-filter: blur(0.5rem);

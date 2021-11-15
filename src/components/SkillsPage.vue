@@ -141,7 +141,7 @@ h2 {
   border: 1px solid #fbae3c;
   -webkit-backdrop-filter: blur(0.5rem);
   backdrop-filter: blur(0.5rem);
-  border-radius: 1.25rem;
+  border-radius: 1rem;
   padding: 3rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
