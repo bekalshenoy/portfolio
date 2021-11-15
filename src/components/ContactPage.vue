@@ -83,14 +83,14 @@ export default {
         ) {
           emailjs
             .send(
-              process.env.SERVICE_ID,
-              process.env.TEMPLATE_ID,
+              process.env.VUE_APP_SERVICE_ID,
+              process.env.VUE_APP_TEMPLATE_ID,
               {
                 email: this.email,
                 subject: this.subject,
                 description: this.description,
               },
-              process.env.USER_ID
+              process.env.VUE_APP_USER_ID
             )
             .then(() => {
               window.alert("Successfully Sent");
