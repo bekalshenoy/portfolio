@@ -60,6 +60,8 @@
 </template>
 
 <script>
+import emailjs from "emailjs-com";
+
 export default {
   name: "ContactPage",
 
@@ -79,10 +81,26 @@ export default {
             this.email.toLowerCase()
           )
         ) {
-          window.alert("Successfully Sent");
-          this.email = "";
-          this.subject = "";
-          this.description = "";
+          emailjs
+            .send(
+              process.env.SERVICE_ID,
+              process.env.TEMPLATE_ID,
+              {
+                email: this.email,
+                subject: this.subject,
+                description: this.description,
+              },
+              process.env.USER_ID
+            )
+            .then(() => {
+              window.alert("Successfully Sent");
+              this.email = "";
+              this.subject = "";
+              this.description = "";
+            })
+            .catch(() => {
+              window.alert("Something Went Wrong");
+            });
         } else {
           window.alert("Use Valid Email");
         }

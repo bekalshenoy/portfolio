@@ -11,6 +11,7 @@
     "aos": "^2.3.4",
     "core-js": "^3.8.3",
     "counterup2": "^2.0.2",
+    "emailjs-com": "^3.2.0",
     "vue": "^3.2.13"
   },
   "devDependencies": {
