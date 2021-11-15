@@ -25,6 +25,7 @@
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-easing="ease-out"
+          v-model="email"
         />
         <input
           type="text"
@@ -33,6 +34,7 @@
           data-aos-duration="1000"
           data-aos-delay="100"
           data-aos-easing="ease-out"
+          v-model="subject"
         />
         <textarea
           placeholder="Description"
@@ -40,10 +42,12 @@
           data-aos-duration="1000"
           data-aos-delay="200"
           data-aos-easing="ease-out"
+          v-model="description"
         ></textarea>
         <input
           type="button"
           value="Send"
+          @click="alertSent"
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="300"
@@ -58,6 +62,35 @@
 <script>
 export default {
   name: "ContactPage",
+
+  data() {
+    return {
+      email: "",
+      subject: "",
+      description: "",
+    };
+  },
+
+  methods: {
+    alertSent() {
+      if (this.email && this.subject && this.description) {
+        if (
+          /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+            this.email.toLowerCase()
+          )
+        ) {
+          window.alert("Successfully Sent");
+          this.email = "";
+          this.subject = "";
+          this.description = "";
+        } else {
+          window.alert("Use Valid Email");
+        }
+      } else {
+        window.alert("All Fields Are Required");
+      }
+    },
+  },
 };
 </script>
 

@@ -205,11 +205,21 @@ button:hover a {
   .card {
     width: auto;
     overflow: hidden;
+    min-height: 15rem;
   }
 
   h1 {
     font-size: 1.8em;
     margin-bottom: 0.5rem;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  h3,
+  p {
+    font-size: 0.8em;
   }
 }
 </style>
