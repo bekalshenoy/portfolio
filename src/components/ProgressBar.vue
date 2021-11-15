@@ -68,7 +68,6 @@ export default {
     rgba(86, 0, 144, 1) 35%,
     rgba(251, 174, 60, 1) 100%
   );
-
   border-radius: 0.5rem;
 }
 

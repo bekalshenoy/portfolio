@@ -95,6 +95,11 @@ export default {
   transition: all 0.5s ease-out;
 }
 
+.card:hover {
+  border: 1px solid #9900ff;
+  transition: all 0.5s ease-out;
+}
+
 h1 {
   font-size: 3.2em;
   margin-bottom: 3rem;
